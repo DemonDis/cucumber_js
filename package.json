@@ -12,7 +12,8 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "cucumber": "cucumber-js",
-    "cypress": "cypress open"
+    "cypress": "cypress open",
+    "cypress:terminal": "cypress run"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^9.1.0",
