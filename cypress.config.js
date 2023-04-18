@@ -38,5 +38,13 @@ module.exports = defineConfig({
   e2e: {
     specPattern: "**/*.feature",
     setupNodeEvents,
+    // specPattern: "tests/e2e",
+    fileServerFolder: "features/e2e",
+    // fixturesFolder: "tests/e2e/fixtures",
+    // integrationFolder: "tests/e2e/integration",
+    // pluginsFile: "tests/e2e/plugins/index.js",
+    // screenshotsFolder: "tests/e2e/screenshots",
+    supportFile: "features/support/e2e.js",
+    // videosFolder: "tests/e2e/videos"
   },
 });
