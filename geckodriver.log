@@ -1,0 +1,14 @@
+1682007771318	geckodriver	INFO	Listening on 127.0.0.1:53044
+1682007771807	mozrunner::runner	INFO	Running command: MOZ_CRASHREPORTER="1" MOZ_CRASHREPORTER_NO_REPORT="1" MOZ_CRASHREPORTER_SHUTDOWN="1" MOZ_NO_REMOTE="1" "/App ... s" "localhost" "-foreground" "-no-remote" "-profile" "/var/folders/ft/_dqr_nkj5b95h156rd0573940000gn/T/rust_mozprofile1WH0QO"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+1682007792739	Marionette	INFO	Marionette enabled
+1682007793116	Marionette	INFO	Listening on port 53082
+Read port: 53082
+console.error: "Warning: unrecognized command line flag -remote-allow-hosts\n"
+WebDriver BiDi listening on ws://127.0.0.1:53045
+1682007793282	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /var/folders/ft/_dqr_nkj5b95h156rd0573940000gn/T/rust_mozprofile1WH0QO/search.json.mozlz4", (void 0)))
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+DevTools listening on ws://127.0.0.1:53045/devtools/browser/b1c4377d-c8a9-4ea4-947e-919c167ab2ab
+JavaScript warning: https://mc.yandex.ru/metrika/watch_serp.js, line 13: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
