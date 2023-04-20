@@ -5,3 +5,6 @@
 
 # CUCUMBER + SELENIUM
 
+```
+behave  features/tutorial01_basics.feature
+```
