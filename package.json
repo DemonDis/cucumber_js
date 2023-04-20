@@ -1,35 +1,15 @@
 {
-  "name": "cucumber_js",
+  "name": "cucumber_cypress",
   "version": "0.1.0",
   "private": true,
-  "dependencies": {
-    "react": "^18.2.0",
-    "react-dom": "^18.2.0",
-    "react-scripts": "5.0.1",
-    "web-vitals": "^2.1.4"
-  },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
     "cucumber": "cucumber-js",
-    "cypress": "cypress open",
-    "cypress:terminal": "cypress run"
+    "open": "cypress open",
+    "headless": "cypress run"
   },
   "devDependencies": {
     "@cucumber/cucumber": "^9.1.0",
     "cypress": "^12.10.0",
     "cypress-cucumber-preprocessor": "^4.3.1"
-  },
-  "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
   }
 }
