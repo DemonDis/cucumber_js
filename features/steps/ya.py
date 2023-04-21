@@ -1,11 +1,26 @@
-from behave import *
-from selenium import webdriver
+"""ya.ru feature tests."""
+
+from pytest_bdd import (
+    given,
+    scenario,
+    then,
+    when,
+)
+
+
+@scenario('e2e/ya.feature', 'посещаю фронт')
+def test_посещаю_фронт():
+    """посещаю фронт."""
+
 
 @when('я ya.ru')
-def step_impl(context):
-    driver = webdriver.Firefox()
-    driver.get("https://ya.ru")
+def _():
+    """я ya.ru."""
+    # raise NotImplementedError
+
 
 @when('я смотрю на картику')
-def step_impl(context):
-    pass
+def _():
+    """я смотрю на картику."""
+    # raise NotImplementedError
+
