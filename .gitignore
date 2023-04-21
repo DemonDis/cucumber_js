@@ -21,3 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# pythone
+.pytest_cache
+geckodriver.log
+__pycache__
