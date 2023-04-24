@@ -12,14 +12,18 @@ behave features/e2e/ya.feature
 
 ## Pytest + Pytest-bdd
 ```bash
-pytest features/e2e/ya.feature
+pytest features/e2e/ya.py
 ```
+### Pytest start with logger
 ```bash
-pytest-bdd features/e2e/ya.feature
+pytest -s features/e2e/ya.py
 ```
+### Generate test py
 ```bash
 pytest-bdd generate features/e2e/ya.feature > features/e2e/ya.py 
 ```
 
-
-pytest-bdd generate features/e2e/ya.feature > ya.py 
+### Install
+```bash
+pip install pytest-splinter
+```
