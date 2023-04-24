@@ -19,8 +19,9 @@ def _():
     print("No, it wasn't found... We need to improve our SEO techniques") 
     # browser.find_by_css('div[class="medium-widget success-story-category last"]:nth-child(2)').fill('splinter - python acceptance testing for web applications')
     browser.find_by_css('input[class="search3__input mini-suggest__input"]').fill('splinter - python acceptance testing for web applications')
-    
-    time.sleep(10) #sleep for 10 sec
+    text_example = browser.find_by_css('span[class="a11y-hidden"]').text
+    print(text_example)
+    time.sleep(3) #sleep for 3 sec
     # browser.screenshot()
     # l.send_keys("Selenium")
     print("Yes, found it! :)")
