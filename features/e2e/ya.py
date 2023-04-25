@@ -1,36 +1,27 @@
 from splinter import Browser
 from pytest_bdd import given, scenario, then, when
 import time
-# from selenium.webdriver.common.keys import Keys
 
 browser = Browser('firefox')
-# l = browser.find_element_by_class_name("search3__input mini-suggest__input")
+# browser = Browser('chrome')
 
 @scenario('ya.feature', 'посещаю фронт')
 def test_посещаю_фронт():
     """посещаю фронт."""
     pass
 
-
-@when('я ya.ru')
-def _():
+@when('я ya.ru', target_fixture="calc")
+def have_five():
     """я ya.ru."""
     browser.visit("http://www.ya.ru")
-    print("No, it wasn't found... We need to improve our SEO techniques") 
-    # browser.find_by_css('div[class="medium-widget success-story-category last"]:nth-child(2)').fill('splinter - python acceptance testing for web applications')
-    browser.find_by_css('input[class="search3__input mini-suggest__input"]').fill('splinter - python acceptance testing for web applications')
+    browser.find_by_css('input[class="search3__input mini-suggest__input"]').fill('TEXT EXAMPLE')
     text_example = browser.find_by_css('span[class="a11y-hidden"]').text
-    print(text_example)
     time.sleep(3) #sleep for 3 sec
-    # browser.screenshot()
-    # l.send_keys("Selenium")
-    print("Yes, found it! :)")
+    browser.screenshot()
     browser.quit()
+    return text_example
 
-
-# @when('я смотрю на картику')
-# def _():
-#     """я смотрю на картику."""
-#     # raise NotImplementedError
-#     pass
-
+@when('я смотрю на картику')
+def add_three(calc):
+    print("CONSOLE LOG CALC =", calc)
+   
