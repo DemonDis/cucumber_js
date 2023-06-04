@@ -5,7 +5,7 @@ import time
 browser = Browser('firefox')
 # browser = Browser('chrome')
 
-@scenario('ya.feature', 'посещаю фронт')
+@scenario('test_01.feature', 'посещаю фронт')
 def test_посещаю_фронт():
     """посещаю фронт."""
     pass

@@ -7,20 +7,20 @@
 
 ## Behave
 ```bash
-behave features/e2e/ya.feature
+behave features/e2e/test.feature
 ```
 
 ## Pytest + Pytest-bdd
 ```bash
-pytest features/e2e/ya.py
+pytest features/e2e/test.py
 ```
 ### Pytest start with logger
 ```bash
-pytest -s features/e2e/ya.py
+pytest -s features/e2e/test.py
 ```
 ### Generate test py
 ```bash
-pytest-bdd generate features/e2e/ya.feature > features/e2e/ya.py 
+pytest-bdd generate features/e2e/test.feature > features/e2e/test.py 
 ```
 
 ### Install
